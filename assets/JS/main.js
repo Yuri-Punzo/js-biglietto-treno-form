@@ -21,18 +21,18 @@ const elderlyDisconut = (generalPrice * 40 / 100);
 
 
 function myFunction() {
-    const howManyKm = document.getElementById("km_distance").value;
+    const kmDistance = document.getElementById("km_distance").value;
     const userAge = document.getElementById("user_age").value;
-    console.log(howManyKm);
+    console.log(kmDistance);
     console.log(userAge);
  if (userAge < 18) {
-    finalPrice = howManyKm * (generalPrice - minorDisconut);
+    finalPrice = kmDistance * (generalPrice - minorDisconut);
     console.log(finalPrice);
 } else if (userAge >= 65) {
-    finalPrice = howManyKm * (generalPrice - elderlyDisconut);
+    finalPrice = kmDistance * (generalPrice - elderlyDisconut);
     console.log(finalPrice);
 } else {
-    let finalPrice = howManyKm * generalPrice;
+    let finalPrice = kmDistance * generalPrice;
     console.log(finalPrice);
 }
 }
