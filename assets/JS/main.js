@@ -27,13 +27,13 @@ function myFunction() {
     console.log(userAge);
  if (userAge < 18) {
     finalPrice = kmDistance * (generalPrice - minorDisconut);
-    console.log(finalPrice);
+    console.log(finalPrice.toFixed(2));
 } else if (userAge >= 65) {
     finalPrice = kmDistance * (generalPrice - elderlyDisconut);
-    console.log(finalPrice);
+    console.log(finalPrice.toFixed(2));
 } else {
     let finalPrice = kmDistance * generalPrice;
-    console.log(finalPrice);
+    console.log(finalPrice.toFixed(2));
 }
 }
 
