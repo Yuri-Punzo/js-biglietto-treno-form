@@ -25,6 +25,7 @@ function myFunction() {
     const userAge = document.getElementById("user_age").value;
     console.log(kmDistance);
     console.log(userAge);
+    document.querySelector("ticket")
  if (userAge < 18) {
     finalPrice = kmDistance * (generalPrice - minorDisconut);
     console.log(finalPrice.toFixed(2));
@@ -35,5 +36,5 @@ function myFunction() {
     finalPrice = kmDistance * generalPrice;
     console.log(finalPrice.toFixed(2));
 }
-document.getElementById("prezzo_biglietto").innerHTML = finalPrice.toFixed(2);
+document.getElementById("prezzo_biglietto").innerHTML = `${finalPrice.toFixed(2)} €`;
 }
