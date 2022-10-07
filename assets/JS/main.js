@@ -32,8 +32,8 @@ function myFunction() {
     finalPrice = kmDistance * (generalPrice - elderlyDisconut);
     console.log(finalPrice.toFixed(2));
 } else {
-    let finalPrice = kmDistance * generalPrice;
+    finalPrice = kmDistance * generalPrice;
     console.log(finalPrice.toFixed(2));
 }
+document.getElementById("prezzo_biglietto").innerHTML = finalPrice.toFixed(2);
 }
-
