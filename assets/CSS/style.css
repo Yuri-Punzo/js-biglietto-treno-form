@@ -8,10 +8,10 @@
     width: 50% !important;
 }
 
-.ticket .container{
-    width: 70% !important;
+#ticket .container{
+    width: 60% !important;
 }
 
-/* .ticket{
+#ticket{
     display: none;
-} */
+}

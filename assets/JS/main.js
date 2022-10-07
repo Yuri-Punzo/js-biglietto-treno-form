@@ -21,11 +21,13 @@ const elderlyDisconut = (generalPrice * 40 / 100);
 
 
 function myFunction() {
-    /* document.getElementById("ticket").style.display = "block"; */
+    document.getElementById("ticket").style.display = "block";
     const kmDistance = document.getElementById("km_distance").value;
     const userAge = document.getElementById("user_age").value;
+    const userNameSurname = document.getElementById("Name_Surname").value;    
     console.log(kmDistance);
     console.log(userAge);
+    console.log(userNameSurname);
  if (userAge < 18) {
     finalPrice = kmDistance * (generalPrice - minorDisconut);
     console.log(finalPrice.toFixed(2));
@@ -36,5 +38,7 @@ function myFunction() {
     finalPrice = kmDistance * generalPrice;
     console.log(finalPrice.toFixed(2));
 }
+document.getElementById("tratta").innerHTML = `${kmDistance} Km` 
+document.getElementById("identity").innerHTML = userNameSurname
 document.getElementById("prezzo_biglietto").innerHTML = `${finalPrice.toFixed(2)} €`;
 }
