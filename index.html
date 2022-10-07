@@ -6,22 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Price Calculator</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
-    <div class="container py-5">
-        <input type="number" placeholder="Quanti Km devi percorrere ?" id="km_distance">
-        <input type="number" placeholder="Quanti anni hai ?" id="user_age">
-        <button onclick="myFunction()">Calcola Prezzo</button>
+    <div class="text-center pt-5">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
     </div>
-    <div>
-    <h1></h1>
-    <p id="prezzo_biglietto"></p>
-</div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col text-end">
+                <input type="number" placeholder="Km da percorrere" id="km_distance">
+            </div>
+            <div class="col text-start">
+                <input type="number" placeholder="Età" id="user_age">
+            </div>
+            <div class="col-12 text-center py-3">
+                <button onclick="myFunction()">Calcola Prezzo</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p id="prezzo_biglietto" class="fs-1"></p>
+            </div>
+        </div>
+    </div>
 
+    <!-- JavaScript -->
     <script src="./assets/JS/main.js"></script>
 </body>
 
