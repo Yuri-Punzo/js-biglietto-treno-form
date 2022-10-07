@@ -21,11 +21,11 @@ const elderlyDisconut = (generalPrice * 40 / 100);
 
 
 function myFunction() {
+    /* document.getElementById("ticket").style.display = "block"; */
     const kmDistance = document.getElementById("km_distance").value;
     const userAge = document.getElementById("user_age").value;
     console.log(kmDistance);
     console.log(userAge);
-    document.querySelector("ticket")
  if (userAge < 18) {
     finalPrice = kmDistance * (generalPrice - minorDisconut);
     console.log(finalPrice.toFixed(2));
