@@ -15,13 +15,25 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
 Il riepilogo dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 Questo richiederà un minimo di ricerca. */
 
-const howManyKm = document.getElementById("km_distance").value;
-
-
-const userAge = document.getElementById("user_age").value
+const generalPrice = 0.21;
+const minorDisconut = (generalPrice * 20 / 100);
+const elderlyDisconut = (generalPrice * 40 / 100);
 
 
 function myFunction() {
+    const howManyKm = document.getElementById("km_distance").value;
+    const userAge = document.getElementById("user_age").value;
     console.log(howManyKm);
     console.log(userAge);
+ if (userAge < 18) {
+    finalPrice = howManyKm * (generalPrice - minorDisconut);
+    console.log(finalPrice);
+} else if (userAge >= 65) {
+    finalPrice = howManyKm * (generalPrice - elderlyDisconut);
+    console.log(finalPrice);
+} else {
+    let finalPrice = howManyKm * generalPrice;
+    console.log(finalPrice);
 }
+}
+
